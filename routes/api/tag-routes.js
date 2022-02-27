@@ -6,7 +6,7 @@ const { findAll } = require('../../models/Product');
 //GET all tags
 router.get('/', async (req, res) => {
     try {
-        const dbTagData = await findAll({
+        const dbTagData = await Tag.findAll({
             include: [
                 {
                     model: Product,
@@ -17,13 +17,13 @@ router.get('/', async (req, res) => {
         res.json(dbTagData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // GET one tag
 router.get('/:id', async (req, res) => {
     try {
-        const dbTagData = await findOne({
+        const dbTagData = await Tag.findOne({
             where: {
                 id: req.params.id
             },
@@ -41,7 +41,7 @@ router.get('/:id', async (req, res) => {
         res.json(dbTagData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // CREATE a new tag
@@ -53,7 +53,7 @@ router.post('/', async (req, res) => {
         res.json(dbTagData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // UPDATE a tag
@@ -71,7 +71,7 @@ router.put('/:id', async (req, res) => {
         return dbTagData;
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // DELETE a tag
@@ -89,7 +89,7 @@ router.delete('/:id', async (req, res) => {
         res.json(dbTagData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 

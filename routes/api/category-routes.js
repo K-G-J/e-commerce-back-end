@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
         res.json(dbCategoryData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'error:' }, err);
+        res.status(500).json({ message: 'error:' });
     }
 });
 // GET a single category
@@ -38,7 +38,7 @@ router.get('/:id', async (req, res) => {
         res.json(dbCategoryData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // CREATE a new category
@@ -50,7 +50,7 @@ router.post('/', async (req, res) => {
         res.json(dbCategoryData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // UPDATE a category
@@ -68,7 +68,7 @@ router.put('/:id', async (req, res) => {
         res.json(dbCategoryData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, error);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // DELETE a category
@@ -84,7 +84,7 @@ router.delete('/:id', async (req, res) => {
         res.json(dbCategoryData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 

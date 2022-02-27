@@ -20,7 +20,7 @@ router.get('/', async (req, res) => {
         res.json(dbProductData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // GET one product
@@ -42,7 +42,7 @@ router.get('/:id', async (req, res) => {
         res.json(dbProductData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 // CREATE new product
@@ -127,7 +127,7 @@ router.delete('/:id', async (req, res) => {
         res.json(dbProductData);
     } catch (err) {
         console.log(err);
-        res.status(500).json({ message: 'server error' }, err);
+        res.status(500).json({ message: 'server error' });
     }
 });
 
