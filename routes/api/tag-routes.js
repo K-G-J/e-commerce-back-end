@@ -68,7 +68,7 @@ router.put('/:id', async (req, res) => {
             res.status(404).json({ message: 'no tag found with this id' });
             return;
         }
-        return dbTagData;
+        res.json(dbTagData);
     } catch (err) {
         console.log(err);
         res.status(500).json({ message: 'server error' });
