@@ -8,6 +8,7 @@ SO THAT my company can compete with other e-commerce companies
 ## Description 
 Database model for getting and retrieving category information, products, and tags for an ecommerce store 
 Server also handles creating, updating, and deleting categories, prouducts, and tags 
+
 [DEMO VIDEO](https://youtu.be/9hL0NiO1ZsA)
 
 ## Installation 
