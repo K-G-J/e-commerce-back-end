@@ -9,7 +9,7 @@ SO THAT my company can compete with other e-commerce companies
 Database model for getting and retrieving category information, products, and tags for an ecommerce store 
 Server also handles creating, updating, and deleting categories, prouducts, and tags 
 
-[DEMO VIDEO](https://youtu.be/9hL0NiO1ZsA)
+[DEMO VIDEO](https://youtu.be/nAq8a2SgQac)
 
 ## Installation 
 1. Clone the repository 
